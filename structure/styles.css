@@ -1,0 +1,14 @@
+.box-of-cards {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.card {
+  display: flex;
+  background-color: green;
+  width: 10rem;
+  height: 15rem;
+  margin: 10px;
+}
