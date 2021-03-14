@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  background-image: url('./assets/Firefly-6.3s-1084px.svg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border-bottom: 3px solid ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: cyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  margin: 0;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-of-cards {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: 100vh;
+  margin: 0px auto;
+  max-width: 70vw;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: cyan;
+  text-align: center;
+  width: 10rem;
+  height: 15rem;
+  margin: 10px;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(50,50,50,0.9);
 }
 
-.App-link {
-  color: #61dafb;
+.card p {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-container {
+  margin: 5px;
+}
+
+.img-container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.more-information-button {
+  background: brown;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* HEADER */
+
+header h1 {
+  font-size: 20px;
 }
