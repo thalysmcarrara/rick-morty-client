@@ -11,8 +11,9 @@ export default function index() {
 
   return (
     <header>
-      <div className="inputs-container">
-        <label htmlFor="characters-option">
+      <h1>The Rick and Morty Wiki</h1>
+      <section className="inputs-container">
+        <label htmlFor="characters-option" className="radio-button">
           <input
             type="radio"
             name="search-option"
@@ -20,9 +21,10 @@ export default function index() {
             value="character"
             onClick={ (event) => handleInput(event.target) }
           />
+          <div className="my-radio-button" />
           Characters
         </label>
-        <label htmlFor="episodes-option">
+        <label htmlFor="episodes-option" className="radio-button">
           <input
             type="radio"
             name="search-option"
@@ -30,9 +32,10 @@ export default function index() {
             value="episode"
             onClick={ (event) => handleInput(event.target) }
           />
+          <div className="my-radio-button" />
           Episodes
         </label>
-        <label htmlFor="locations-option">
+        <label htmlFor="locations-option" className="radio-button">
           <input
             type="radio"
             name="search-option"
@@ -40,11 +43,10 @@ export default function index() {
             value="location"
             onClick={ (event) => handleInput(event.target) }
           />
+          <div className="my-radio-button" />
           Locations
         </label>
-      </div>
-      <h1>The Rick and Morty Wiki</h1>
-      <button type="button">procurar</button>
+      </section>
     </header>
   );
 }
