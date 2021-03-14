@@ -3,6 +3,7 @@ import context from '../context/context';
 import Header from '../components/Header';
 import Cards from '../components/Cards';
 import useFetch from '../effects/useFetch';
+import useFetchOnUpdate from '../effects/useFetchOnUpdate';
 
 export default function Home() {
   const {
@@ -13,6 +14,7 @@ export default function Home() {
   } = useContext(context);
   // componentDidMount
   useFetch(setData, inputSelected, setIsFetching);
+  useFetchOnUpdate(setData, inputSelected, setIsFetching);
   return (
     <>
       <Header />
