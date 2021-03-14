@@ -3,7 +3,7 @@ import React from 'react';
 export default function index(props) {
   const { handleInput, inputSelected } = props;
   return (
-    <label htmlFor="locations-option">
+    <label className="radio-button" htmlFor="locations-option">
       <input
         type="radio"
         name="search-option"
@@ -12,6 +12,7 @@ export default function index(props) {
         checked={ inputSelected === 'location' }
         onClick={ (event) => handleInput(event.target) }
       />
+      <div className="my-radio-button" />
       Locations
     </label>
   );
