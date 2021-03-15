@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Cards from '../components/Cards';
 import useFetch from '../effects/useFetch';
 import useFetchOnUpdate from '../effects/useFetchOnUpdate';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const {
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Header />
       {isFetching ? <div>Loading...</div> : <Cards />}
+      <Footer />
     </>
   );
 }
